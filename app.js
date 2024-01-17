@@ -13,7 +13,7 @@ const app = express();
 app.get('/', (req, res) => {
   try {
     counter = fs.readFileSync('./test.txt', {encoding:'utf8', flag:'r'});
-    console.log('got new call 6');
+    console.log('got new call 7');
     console.log(counter);
     ++counter;
   } catch (err) {
