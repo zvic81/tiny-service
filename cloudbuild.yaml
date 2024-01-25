@@ -10,3 +10,5 @@ steps:
       - '--image=gcr.io/europe-north1-docker.pkg.dev/vzaharov/tiny-repository/tiny-service:1'
       - '--platform=managed'
       - '--region=europe-north1'
+options:
+  logging: CLOUD_LOGGING_ONLY
