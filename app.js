@@ -11,7 +11,7 @@ let counter = 0;
 
 const app = express();
 app.get('/', (req, res) => {
-  const message = `Hello ${new Date()}`;
+  const message = `Hello from Vic, now  ${new Date()}`;
   console.log(message);
   res.send(message);
 });

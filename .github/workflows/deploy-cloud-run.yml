@@ -1,0 +1,12 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/europe-north1-docker.pkg.dev/vzaharov/tiny-repository/tiny-service:1', '.']
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - 'vzaharov'
+      - '--image=gcr.io/europe-north1-docker.pkg.dev/vzaharov/tiny-repository/tiny-service:1'
+      - '--platform=managed'
+      - '--region=europe-north1'
