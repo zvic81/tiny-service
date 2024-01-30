@@ -11,7 +11,7 @@ let counter = 0;
 
 const app = express();
 app.get('/', (req, res) => {
-  const message = `Hello from Vic, I'm from Apatity, it's cold now and today is  ${new Date()}`;
+  const message = `Hello from Vic, I'm from Apatity, it's cold now and today is  ${new Date()}  Testing trigger from terraform!!!!!!!!!!`;
   console.log(message);
   res.send(message);
 });
